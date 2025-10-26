@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-pair<int,int> linearSearch(int mat[][3],int rows,int cols,int target){
+pair<int,int>  linearSearch(int mat[][3],int rows,int cols,int target){
     for(int i = 0;i < rows;i++){
         for(int j = 0;j < cols;j++){
             if(mat[i][j] == target){
