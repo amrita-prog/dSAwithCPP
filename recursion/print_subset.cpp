@@ -27,3 +27,5 @@ int main(){
     printAllSubsets(arr,ans,0);
     return 0;
 }
+
+
