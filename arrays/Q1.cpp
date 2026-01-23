@@ -27,3 +27,21 @@ int main(){
 
     return 0;
 }
+
+
+// int main(){
+//     int num[] = {3, 7, 2, 9, 4, 1};
+//     int size = 6;
+
+//     int largest = INT_MIN;
+
+//     for(int i =0; i < size; i++){
+//         if(num[i] > largest){
+//             largest = num[i];
+//         }
+//     }
+
+//     cout<<"Largest element: " << largest << endl;
+
+//     return 0;
+// }

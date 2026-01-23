@@ -3,7 +3,6 @@
 #include<algorithm>
 using namespace std;
 
-
 bool isArraySorted(const vector<int>& arr){
     return is_sorted(arr.begin(),arr.end());
 }
