@@ -2,31 +2,42 @@
 #include<vector>
 using namespace std;
 
-vector<int> pairSum(vector<int>& nums,int target){
+vector<int> pair_sum(vector<int>& arr, int target){
     vector<int> ans;
-    int n = nums.size();
+    int n = arr.size();
+    int st = 0, end = n-1;
 
-    int i = 0, j = n - 1;
-    while(i < j){
-        int pairSum = nums[i] + nums[j];
-
-        if(pairSum > target){
-            j--;
-        }else if(pairSum < target){
-            i++;
-        }else{
-            ans.push_back(i);
-            ans.push_back(j);
+    while(st <= end){
+        int sum = arr[st] + arr[end];
+        if(sum == target){
+            ans.push_back(arr[st]);
+            ans.push_back(arr[end]);
             return ans;
+        }else if(sum < target){
+            st++;
+        }else{
+            end--;
         }
     }
     return ans;
 }
 
+
 int main(){
-    vector<int> nums = {2,7,11,15};
-    int target = 9;
-    vector<int> ans = pairSum(nums, target);
-    cout<<ans[0]<<" "<<ans[1]<<endl;
+    vector<int> arr = {1,2,3,4,5,6};
+    int target = 6;
+
+    vector<int> result = pair_sum(arr, target);
+
+    if(result.size() == 2){
+        cout << "Pair found: " << result[0] << ", " << result[1] << endl;
+    }else{
+        cout << "No pair found." << endl;
+    }
+    
+    
+
     return 0;
 }
+
+
