@@ -41,6 +41,13 @@ int lengthOfLL(Node* head){
     return count;
 }
 
+Node* removesHead(Node* head){
+    if(head == nullptr){
+        return nullptr;
+    }
+    
+}
+
 int main(){
     vector<int> arr = {12,5,7,9};
     // Node* y = new Node(arr[0]);
