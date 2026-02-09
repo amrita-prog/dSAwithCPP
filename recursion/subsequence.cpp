@@ -4,8 +4,11 @@ using namespace std;
 
 void sub(int i, vector<int> &ds, int arr[], int n){
     if(i >= n){
-        for(auto it: ds){
-            cout<<it<<" ";
+        for(auto value: ds){
+            cout<<value<<" ";
+        }
+        if(ds.size() ==0){
+            cout<<"{}";
         }
         cout<<endl;
         return;
