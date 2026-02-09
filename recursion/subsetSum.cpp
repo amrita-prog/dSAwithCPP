@@ -38,7 +38,10 @@ int main(){
 
 
 
-// print only one subset that adds up to the given sum:
+
+
+
+// print only one subset that adds up to the given sum: 1,1
 
 // bool subsetSum(int i, vector<int> &ds, int s, int sum, int arr[], int n) {
 //     if(i == n){
@@ -74,6 +77,44 @@ int main(){
 //     int sum = 2;
 //     vector<int> ds;
 //     subsetSum(0, ds, 0, sum, arr, n);
+
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+
+// count of subset = 2
+
+// int subsetSum(int i, int s, int sum, int arr[], int n) {
+//     if(i == n){
+//         if(s == sum){
+//             return 1;
+//         }
+//         return 0;
+//     }
+
+//     s += arr[i];
+
+//     int l = subsetSum(i+1, s, sum, arr, n);
+
+//     s -= arr[i];
+
+//     int r = subsetSum(i+1, s, sum, arr, n);
+
+//     return l+r;
+// }
+
+// int main(){
+//     int arr[] = {1,2,1};
+//     int n = 3;
+//     int sum = 2;
+//     cout<<subsetSum(0, 0, sum, arr, n);
 
 //     return 0;
 // }
